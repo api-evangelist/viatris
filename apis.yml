@@ -26,6 +26,8 @@ description: >-
   operates in B2B pharmaceutical supply chain contexts without a public
   technology integration API offering.
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/viatris
   - url: https://www.viatris.com/en
     name: Viatris Global Healthcare
     type: Website
