@@ -4,6 +4,11 @@ url: >-
 apis: []
 name: Viatris
 tags:
+  - Pharmaceuticals
+  - Healthcare
+  - Generics
+  - Life Sciences
+tags_raw:
   - Pharmaceutical
   - Healthcare
   - Generics
