@@ -80,6 +80,50 @@ edges:
     identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
   detected_by: sweep-clinical-trial-sponsors.py
   first_seen: '2026-10-21'
+- partner_name: EMA (EU centrally authorised medicines)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.ema.europa.eu/en/medicines/human/EPAR/ambrisentan-viatris
+  category: EU centrally authorised medicine
+  contract_reference:
+    register: EMA medicines report (centrally authorised medicines; CHMP / CVMP opinion, EC decision)
+    standard: EU centralised marketing authorisation (Regulation (EC) 726/2004)
+    role: eu-marketing-authorisation-holder
+    categories:
+    - Human
+    statuses:
+    - Application withdrawn
+    - Authorised
+    spec_file: null
+    registered_name: Viatris Limited
+    matched_domain: viatris.com
+    matched_by: domain
+    current_authorisation: true
+    signal_note: certified_products = one entry per product TYPE, never per product, only from products granted
+      an MA; lapsed when every granted product of the type is withdrawn / expired / revoked / lapsed. Advanced-therapy
+      rows are read by cell-gene-therapy and not repeated here. Products are context, never counted
+    detected_by: sweep-eu-ema-medicines.py
+    detected: '2026-10-22'
+    certified_products:
+    - product: generic / hybrid (EU centralised marketing authorisation)
+      product_type: generic / hybrid
+      standard: EU centralised marketing authorisation (Regulation (EC) 726/2004)
+      lapsed: false
+      products_sample:
+      - Ambrisentan Viatris (previously Ambrisentan Mylan) (ambrisentan)
+      - Anagrelide Viatris (previously Anagrelide Mylan) (anagrelide)
+      - Atazanavir Viatris (previously Atazanavir Mylan) (atazanavir)
+      - Clopidogrel Viatris (previously Clopidogrel Taw Pharma) (clopidogrel)
+      - Dapagliflozin Viatris (dapagliflozin)
+      - Darunavir Viatris (previously Darunavir Mylan) (darunavir)
+    identity: wikidata Q101983981 'Viatris' P856 https://www.viatris.com/en
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-eu-ema-medicines.py
+  first_seen: '2026-10-22'
 generated: '2026-10-21'
 method: searched
 source:
@@ -92,3 +136,7 @@ checked:
 - https://clinicaltrials.gov/api/v2/studies
 - https://euclinicaltrials.eu/ctis-public/search
 - https://www.cdisc.org/members/search
+- https://spor.ema.europa.eu/omswi/
+- https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-report_en.xlsx
+- https://www.ema.europa.eu/en/human-regulatory-overview/research-development/data-medicines-iso-idmp-standards-overview
+- https://www.ema.europa.eu/en/medicines/download-medicine-data
